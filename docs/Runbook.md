@@ -39,7 +39,9 @@ A01/
 ````
 
 📸 **Screenshot Placeholder:**  
-![Folder-Structure](img/Folder.png)
+
+![Folder-Structure](../img/Folders.png)
+
 ---
 
 ## 🐍 Step 1: Create & Activate Virtual Environment
@@ -65,7 +67,7 @@ Expected output:
 
 📸 **Screenshot Placeholder:**
 
-> ![venve](img/venve.png)
+![Folder-Structure](../img/venv.png)
 
 ---
 
@@ -86,7 +88,7 @@ python -m uvicorn --version
 
 📸 **Screenshot Placeholder:**
 
-> ![Folder-Structure](img/uvicorn.png)
+![Folder-Structure](../img/uvicorn.png)
 
 ---
 
@@ -107,7 +109,8 @@ Application startup complete.
 
 📸 **Screenshot Placeholder:**
 
-> ![Folder-Structure](img/server.png)
+![Folder-Structure](../img/server.png)
+
 
 ---
 
@@ -129,7 +132,8 @@ Expected response:
 
 📸 **Screenshot Placeholder:**
 
-> *Browser showing root API JSON response*
+![Folder-Structure](../img/server.png)
+
 
 ---
 
@@ -150,7 +154,7 @@ Available endpoints:
 
 📸 **Screenshot Placeholder:**
 
-> ![Folder-Structure](img/swagger.png)
+> ![Folder-Structure](../img/swagger.png)
 
 ---
 
@@ -188,8 +192,7 @@ Terminal output:
 
 📸 **Screenshot Placeholders:**
 
-> ![Folder-Structure](img/swagger-deploy.png)
-> ![Folder-Structure](img/swagger-risk.png)
+> ![Folder-Structure](../img/swagger-deploy.png)
 ---
 
 ## 🤖 Step 7: Test AI Risk Scoring API (`/risk-score`)
@@ -228,8 +231,7 @@ Terminal output:
 
 📸 **Screenshot Placeholders:**
 
-> ![Folder-Structure](img/trigger.png)
-> ![Folder-Structure](img/risk.png)
+> ![Folder-Structure](../img/swagger-risk.png)
 
 ---
 
@@ -251,7 +253,8 @@ The UI displays:
 
 📸 **Screenshot Placeholder:**
 
-> *Frontend dashboard loaded in browser*
+![Folder-Structure](../img/UI.png)
+
 
 ---
 
@@ -282,8 +285,9 @@ The UI displays:
 
 📸 **Screenshot Placeholders:**
 
-> ![Folder-Structure](img/UI.png)
-> *Frontend showing risk decision*
+![Folder-Structure](../img/trigger.png)
+
+![Folder-Structure](../img/Risk.png)
 
 ---
 
@@ -299,12 +303,11 @@ The UI displays:
 
 📸 **Screenshot Placeholder:**
 
-> *Combined view: Swagger + Frontend + Terminal*
+![Folder-Structure](../img/API.png)
 
 ---
 
 ## 🎓 Conclusion
-
 This project demonstrates a **fully functional AI-driven DevSecOps Control Plane** with:
 
 * Explainable AI risk scoring
@@ -316,3 +319,4 @@ This project demonstrates a **fully functional AI-driven DevSecOps Control Plane
 
 **End of Run Guide** ✅
 
+### Thank You .....Made by L❤️VE with Sahil 
