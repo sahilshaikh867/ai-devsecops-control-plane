@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI DevSecOps Control Plane</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    button { padding: 10px 15px; margin-right: 10px; }
+    pre { background: #111; color: #0f0; padding: 15px; }
+  </style>
+</head>
+<body>
+
+<h2>AI DevSecOps Control Plane</h2>
+
+<button onclick="deploy()">Trigger Deploy</button>
+<button onclick="risk()">Check Risk</button>
+
+<h3>Response</h3>
+<pre id="output">---</pre>
+
+<script>
+function deploy() {
+  fetch("http://127.0.0.1:8000/deploy", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      service_name: "demo-app",
+      environment: "production",
+      requested_by: "admin"
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("output").innerText =
+      JSON.stringify(data, null, 2);
+  });
+}
+
+function risk() {
+  fetch("http://127.0.0.1:8000/risk-score", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      critical: 1,
+      infra_instability: 1,
+      peak_hours: 1,
+      past_failures: 1
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("output").innerText =
+      JSON.stringify(data, null, 2);
+  });
+}
+</script>
+
+</body>
+</html>
