@@ -1,3 +1,5 @@
+
+
 # 🚀 AI DevSecOps Control Plane – Complete Run Guide
 
 This document provides **error-free, step-by-step instructions** to run the AI DevSecOps Control Plane project from scratch, including backend, frontend, and verification steps.
@@ -37,8 +39,7 @@ A01/
 ````
 
 📸 **Screenshot Placeholder:**  
-> _Project folder structure visible in File Explorer_
-
+![Folder-Structure](img/Folder.png)
 ---
 
 ## 🐍 Step 1: Create & Activate Virtual Environment
@@ -64,7 +65,7 @@ Expected output:
 
 📸 **Screenshot Placeholder:**
 
-> *Terminal showing (.venv) activated*
+> ![venve](img/venve.png)
 
 ---
 
@@ -85,7 +86,7 @@ python -m uvicorn --version
 
 📸 **Screenshot Placeholder:**
 
-> *Terminal showing uvicorn version*
+> ![Folder-Structure](img/uvicorn.png)
 
 ---
 
@@ -106,7 +107,7 @@ Application startup complete.
 
 📸 **Screenshot Placeholder:**
 
-> *Terminal showing backend server running*
+> ![Folder-Structure](img/server.png)
 
 ---
 
@@ -149,7 +150,7 @@ Available endpoints:
 
 📸 **Screenshot Placeholder:**
 
-> *Swagger UI main page*
+> ![Folder-Structure](img/swagger.png)
 
 ---
 
@@ -187,9 +188,8 @@ Terminal output:
 
 📸 **Screenshot Placeholders:**
 
-> *Swagger deploy request & response*
-> *Terminal showing audit log*
-
+> ![Folder-Structure](img/swagger-deploy.png)
+> ![Folder-Structure](img/swagger-risk.png)
 ---
 
 ## 🤖 Step 7: Test AI Risk Scoring API (`/risk-score`)
@@ -228,8 +228,8 @@ Terminal output:
 
 📸 **Screenshot Placeholders:**
 
-> *Swagger risk-score request & response*
-> *Terminal showing AI audit log*
+> ![Folder-Structure](img/trigger.png)
+> ![Folder-Structure](img/risk.png)
 
 ---
 
@@ -282,7 +282,7 @@ The UI displays:
 
 📸 **Screenshot Placeholders:**
 
-> *Frontend showing deploy response*
+> ![Folder-Structure](img/UI.png)
 > *Frontend showing risk decision*
 
 ---
